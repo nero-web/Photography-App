@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { items } from '../components/AllData';
 import { CursorContext } from "../context/CursorContext";
+import { motion } from 'framer-motion';
+import { transition1 } from '../transitions';
 
 const Portfolio = () => {
   useEffect(() => {
@@ -24,7 +26,7 @@ const Portfolio = () => {
   const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext)
 
   return (
-    <section className='w-screen h-screen relative flex justify-center'>
+    <motion.section className='w-screen h-screen relative flex justify-center' initial={{ opacity: 0, y: '100%'}} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y:'100%'}} transition={transition1}>
       <div className='container mx-0 h-auto absolute lg:top-[140px] top-[100px] pb-5 px-5'>
         <div className='w-full mb-5' onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
           <h1 className='h11 mb-10'>Portfolio</h1>
@@ -79,7 +81,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      </section>  
+      </motion.section>  
   );
 };
 

@@ -15,7 +15,7 @@ import {
 import { FaInstagram, FaFacebook, } from 'react-icons/fa';
 
 const Header = () => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  const {mouseEnterHandler, mouseLeaveHandler} = useContext(CursorContext)
   const [openMenu, setOpenMenu] = useState(false);
   const links = [
     { to: "/", label: "Home" },
@@ -34,9 +34,7 @@ const Header = () => {
         {/* Logo */}
         <Link
           to={"/"}
-          className='max-w-[200px]'
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler}>
+          className='max-w-[200px]'>
           <img src={Logo} alt=''></img>
         </Link>
         <i
@@ -98,33 +96,31 @@ const Header = () => {
           </div>
         </div>
         <nav
-          className='hidden xl:flex gap-x-12 font-semibold'
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler}>
+          className='hidden xl:flex gap-x-12 font-semibold'>
           <Link
             to={"/"}
-            className='text-[#696c6d] hover:text-primary transition'>
+            className='text-[#696c6d] transition'>
             Home
           </Link>
           <Link
             to={"/about"}
-            className='text-[#696c6d] hover:text-primary transition'>
+            className='text-[#696c6d] transition'>
             About
           </Link>
           <Link
             to={"/portfolio"}
-            className='text-[#696c6d] hover:text-primary transition'>
+            className='text-[#696c6d] transition'>
             Portfolio
           </Link>
           <Link
-            to={"/contact"}
-            className='text-[#696c6d] hover:text-primary transition'>
-            Contact Us
+            to={"/blog"}
+            className='text-[#696c6d] transition'>
+            Blog
           </Link>
           <Link
-            to={"/blog"}
-            className='text-[#696c6d] hover:text-primary transition'>
-            Blog
+            to={"/contact"}
+            className='text-[#696c6d] transition'>
+            Contact Us
           </Link>
         </nav>
       </div>
