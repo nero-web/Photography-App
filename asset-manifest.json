@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Photography-App/static/css/main.868803aa.css",
-    "main.js": "/Photography-App/static/js/main.6f460b39.js",
+    "main.css": "/Photography-App/static/css/main.e089fe99.css",
+    "main.js": "/Photography-App/static/js/main.6f536880.js",
     "static/media/rue 2.jpg": "/Photography-App/static/media/rue 2.568bfe1a117b08b6068a.jpg",
     "static/media/mountain 3.jpg": "/Photography-App/static/media/mountain 3.7e3c9e40e36c82c4e254.jpg",
     "static/media/structers 2.jpg": "/Photography-App/static/media/structers 2.cdab54a083a7f473ed6a.jpg",
@@ -61,11 +61,11 @@
     "static/media/festival-l.avif": "/Photography-App/static/media/festival-l.7415a4e58c923a3ce7b0.avif",
     "static/media/logo.svg": "/Photography-App/static/media/logo.01328229bdbe2ffa2606048c6241c917.svg",
     "index.html": "/Photography-App/index.html",
-    "main.868803aa.css.map": "/Photography-App/static/css/main.868803aa.css.map",
-    "main.6f460b39.js.map": "/Photography-App/static/js/main.6f460b39.js.map"
+    "main.e089fe99.css.map": "/Photography-App/static/css/main.e089fe99.css.map",
+    "main.6f536880.js.map": "/Photography-App/static/js/main.6f536880.js.map"
   },
   "entrypoints": [
-    "static/css/main.868803aa.css",
-    "static/js/main.6f460b39.js"
+    "static/css/main.e089fe99.css",
+    "static/js/main.6f536880.js"
   ]
 }
