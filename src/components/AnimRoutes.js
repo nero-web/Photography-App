@@ -20,7 +20,6 @@ const AnimRoutes = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path="/portfolio/product/:id" element={<ImagePage />} />
         <Route path='/blog' element={<Blog/>}/>
-        {/* <Route path="*" element={<Home to="/" />} /> */}
       </Routes>
     </AnimatePresence>
   );

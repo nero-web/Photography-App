@@ -12,7 +12,7 @@ const ImagePage = () => {
 
       const item = items.find((item) => item.id === parseInt(id));
 
-      const [image, setImage] = useState(item.imgp);
+      const [image, setImage] = useState(item.otherImgs[2]);
 
       const changeImage = (e) => {
         setImage(e.target.src);
@@ -27,7 +27,7 @@ const ImagePage = () => {
                             <img src={image} alt="pic" className="w-[75%] h-full object-cover"/>
                         </div>
                         <div className="small-imgs">
-                            <img onMouseOver={changeImage} src={item.imgp} alt="pic"/>
+                            <img onMouseOver={changeImage} src={item.otherImgs[2]} alt="pic"/>
                             <img onMouseOver={changeImage} src={item.otherImgs[0]} alt="pic"/>
                             <img onMouseOver={changeImage} src={item.otherImgs[1]} alt="pic"/>
                         </div>
