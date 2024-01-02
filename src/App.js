@@ -10,7 +10,7 @@ const App = () => {
   const { cursorVariants, cursorBG } = useContext(CursorContext);
   return (
     <div className='App overflow-y-auto relative'>
-      <Router basename='/Photography-App'>
+      <Router>
         <Header />
         <AnimRoutes />
       </Router>
